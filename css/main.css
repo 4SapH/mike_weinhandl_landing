@@ -1,0 +1,246 @@
+/*
+
+https://dribbble.com/shots/2987619-Mike-Weinhandl-landing-page
+
+*/
+
+
+/* Google Fonts */
+@import
+  url('http://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  transition: all ease-in-out 250ms;
+
+  color: #fff;
+}
+
+@media (min-width: 50rem) {
+  * {
+    color: #6E6E6E;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+.clearfix::after,
+section::after,
+footer::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+*/
+
+/* typography
+===================== */
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 50rem) {
+
+  p {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 1rem 0;
+  }
+
+  .title {
+    font-size: 3.7rem;
+  }
+}
+
+
+.container {
+  max-width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 50rem) {
+  .container {
+    max-width: 85%;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+
+/* home-hero
+===================*/
+.home-hero {
+  background: url(../img/hero-bg.jpeg), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media (min-width: 50rem) {
+  .home-hero {
+    background: url(../img/hero-bg.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: static;
+    width: 75%;
+    float: left;
+  }
+}
+
+
+/* header
+===================*/
+
+header {
+  text-align: center;
+  color: #FFF;
+  margin-top: 45vh;
+  transform: translateY(-50%);
+  margin-bottom: -10vh;
+}
+
+
+header h1 {
+  text-transform: uppercase;
+}
+
+.avatar {
+  max-width: 7rem;
+  border-radius: 50%;
+  margin: 1em;
+}
+
+@media (min-width: 50rem) {
+  header {
+    margin: 0;
+    transform: translateY(0);
+  }
+  .avatar {
+    max-width: 4.45rem;
+    margin: 0 0 1em;
+  }
+}
+
+/* nav
+===================*/
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: .5em;
+}
+
+.nav-desktop {
+  display: none;
+}
+
+.nav-mobile a:hover path {
+  fill: #666;
+}
+
+.nav-mobile li {
+  display: inline-block;
+}
+
+.nav-mobile li svg {
+  width: 2em;
+  height: 2em;
+}
+
+.nav-mobile path {
+  fill: #FFF;
+}
+
+@media (min-width: 50rem) {
+  .nav-mobile {
+    display: none;
+  }
+  .nav-desktop {
+    display: block;
+  }
+
+  nav {
+    margin-top: 2rem;
+  }
+
+  nav li {
+    margin: 1.4rem 0;
+  }
+
+  nav a {
+    padding: 0;
+    color: #6E6E6E;
+  }
+
+  nav li a:hover {
+    color: #C0C2C1;
+  }
+}
+
+
+
+/* MAIN */
+
+@media (min-width: 50rem) {
+  main {
+    margin-top: 2rem;
+    width: 25%;
+    float: left;
+    color: #6E6E6E;
+    padding-left: 2rem;
+  }
+}
